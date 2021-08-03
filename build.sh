@@ -3,7 +3,7 @@
 set -e
 
 bundler install
-bundler exec jekyll build
+bundler exec jekyll build --trace
 ruby sitemap.rb
 rm -rf htmltest
 mkdir -p htmltest
